@@ -1,14 +1,21 @@
 #include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <fcntl.h>
 #include <unistd.h>
-
+ 
 /**
- * main - Program that prints a line to the stanadard error
- *
- *  Return 1 (Success)
- */
+ *  * main - Entry point
+ *   *
+ *    * Return: Always 0 (Success)
+ *     */ 
 int main(void)
 {
-	fput("and that piece of art is useful\" - Dora Kor par, 2015-10-19\n", stdout);
-	return (1);
-
+	int w;
+	w = write(STDOUT_FILENO, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 10); 
+	if(w < 0)
+		{	
+		      perror("Writing error: ");
+		}
+	return(1);
 }
