@@ -11,11 +11,11 @@
  *     */ 
 int main(void)
 {
-	int w;
-	w = write(STDOUT_FILENO, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 10); 
+	nt w;
+	w = write(STDOUT_FILENO, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n"); 
 	if(w < 0)
-		{	
-		      perror("Writing error: ");
+		{
+			perror("Writing error: ");
 		}
 	return(1);
 }
