@@ -1,4 +1,9 @@
 #include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <fcntl.h>
+#include <unistd.h>
+
 /**
  * main - Program that prints a line to the stanadard error
  *
@@ -6,7 +11,7 @@
  */
 int main(void)
 {
-	fput("and that piece of art is useful\" - Dora Kor par, 2015-10-19\n", stdoubt);
+	fput("and that piece of art is useful\" - Dora Kor par, 2015-10-19\n", stdout);
 	return (1);
 
 }
