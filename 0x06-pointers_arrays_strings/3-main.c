@@ -6,13 +6,19 @@
  *
  * Return: Always 0.
  */
-int main(void)
+int _strcmp(char *s1, char *s2)
 {
-    char s1[] = "Hello";
-    char s2[] = "World!";
+	int i = 0;
 
-    printf("%d\n", _strcmp(s1, s2));
-    printf("%d\n", _strcmp(s2, s1));
-    printf("%d\n", _strcmp(s1, s1));
-    return (0);
+	int dif = 0;
+
+	while (s1[i] != 0 && s2[i] != 0)
+	{
+		dif = s1[i] - s2[i];
+		if (dif != 0)
+			break;
+		i++;
+	}
+
+	return (dif);
 }
