@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 
 /**
@@ -19,5 +20,5 @@ void print_diagsums(int *a, int size)
 		sum2 += *(a + num * size + (size - num - 1));
 	}
 
-	printf("%d,  %d\n", sum1, sum2);
+	printf("sum: %d\n", sum1, sum2);
 }
