@@ -14,11 +14,6 @@
 int int_index(int *array, int size, int (*cmp)(int)
 {
 	int j;
-<<<<<<< HEAD
-	
-=======
-
->>>>>>> 8dcc2f19c33acacca6d1345280d6a86bb1c43767
 	if (array && cmp)
 	{
 		for (j = 0; j < size; j++)
