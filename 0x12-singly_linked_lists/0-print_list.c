@@ -12,7 +12,7 @@ size_t print_list(const list_t *h)
 {
 	unsigned int i;
 	
-	i = 0;
+	j = 0;
 
 	if (h == NULL)
 		return (0);
@@ -23,7 +23,7 @@ size_t print_list(const list_t *h)
 		else
 			printf("[%u] %s\n", h->len, h->str);
 		h = h->next;
-		i++;
+		j++;
 	}
-	return (i);
+	return (j);
 }
