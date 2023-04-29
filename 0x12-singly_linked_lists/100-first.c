@@ -1,17 +1,14 @@
 #include <stdio.h>
-#include "lists.h"
 
+
+void print_beforemain(void) __attribute__((constructor));
 /*
- * printbeforemain - function that prints a sentence before the main function
+ * printbeforemain - prints a sentence before the main function
  *
- * void: points to the head function
  *
- * Return: Always Success
  */
 
-void printbeforemain(void) __attribute__ ((constructor));
-
-void printbeforemain(void)
+void print_beforemain(void)
 {
 	printf("You're beat! and yet, you must allow, \n");
 	printf("I bore my house upon my back! \n");
