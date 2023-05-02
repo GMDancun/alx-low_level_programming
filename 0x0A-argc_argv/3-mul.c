@@ -13,14 +13,13 @@
 int main(int argc, char *argv[])
 {
 	int multiply;
+	char t[] = "Error";
 
 	multiply = 0;
 
-	char t[] = "Error";
-
 	if (argc != 3)
 	{
-		printf("#s\n", t);
+		printf("%s\n", t);
 		return (1);
 	}
 	multiply = atoi(argv[1]) * atoi(argv[2]);
