@@ -46,5 +46,6 @@ void print_all(const char * const format, ...)
 		q++;
 	}
 	printf("\n");
+
 	va_end(vlst);
 }
