@@ -14,7 +14,7 @@
  */
 listint_t *find_listint_loop(listint_t *head)
 {
-	listint_t *holder;
+	listint_t *temp_hold;
 
 	while (head != NULL)
 	{
