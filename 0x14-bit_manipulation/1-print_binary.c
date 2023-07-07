@@ -3,9 +3,9 @@
 #include <math.h>
 /**
  * print_binary - a function that prints the binary representation of a number.
- * 
+ *
  * Prototype: void print_binary(unsigned long int n);
- * 
+ *
  * @n: No. to be converted to binary
  *
  * other intructiobs
