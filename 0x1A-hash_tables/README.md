@@ -1,0 +1,1 @@
+0X1A C - HASH TABLES
